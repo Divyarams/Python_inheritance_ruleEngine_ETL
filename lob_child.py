@@ -6,13 +6,13 @@ class lob_child(common_parent):
     super().__init__()
     print('Parent class instantiated')
     
-  def lob_rule1():
+  def lob_rule1(self):
     global var1
     array_check=['CA','NY','LA']
     var1=df.filter(col('COL_NAME')).isin(array_check)).count()
     return var1
     
-  def lob_rule2():
+  def lob_rule2(self):
     global var2
     array_checksum=1000000
     if df.select(sum(col('COL_NAME'))) > array_checksum:
