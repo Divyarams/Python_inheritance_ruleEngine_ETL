@@ -1,4 +1,4 @@
-from common_parent import main
+from common_parent import common_rule
 class lob_child(common_parent):
   
   def __init__(self):
